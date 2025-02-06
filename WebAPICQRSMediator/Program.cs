@@ -4,11 +4,12 @@ using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var env = builder.Environment.EnvironmentName;
+
 builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true) // Default file
-    .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true) // Development-specific settings
-    .AddJsonFile("appsettings.UAT.json", optional: true, reloadOnChange: true) // UAT-specific settings
+    .AddJsonFile("appsettings.{env}.json", optional: true, reloadOnChange: true) // Development-specific settings
     .AddEnvironmentVariables(); // Load environment variables if needed
 
 builder.Services.AddMediatR(cfg => {

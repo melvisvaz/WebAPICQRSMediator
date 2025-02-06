@@ -36,7 +36,7 @@ namespace WebAPICQRSMediator.Controllers
         {
             try
             {
-                var setting1 = _configuration["app:job"];
+                var setting1 = _configuration["app:new1"];
                 var response = await _mediator.Send(new GetCustomersQuery());
                 return Ok(response);
             }

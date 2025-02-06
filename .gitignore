@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CQRS/bin/Debug/net8.0
+/Models/Models/bin/Debug/net8.0
+/Models/Models/obj/Debug/net8.0
+/WebAPICQRSMediator/obj
+/CQRS/obj/Debug/net8.0
+/CQRS/obj
+/Models/Models/obj
+/WebAPICQRSMediator/.vs
+/WebAPICQRSMediator/bin/Debug/net8.0

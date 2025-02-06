@@ -1,0 +1,1 @@
+ASP.Net Core web api using CQRS pattern and mediator
